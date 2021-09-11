@@ -1,32 +1,23 @@
 package singletonMultiThreadingExample;
 
 /**
- * Double-checked locking singelton implementation.
+ * Enum based singelton implementation.
  */
 
-public class DBConnection {
-  // The volatile keyword guarantees visibility but NOT atomicity. It ensures that
-  // multiple threads handle the variable correctly becuase it's always read from
-  // main
-  // memory and not the thread's cache.
-  private static volatile DBConnection uniqueInstance;
+public enum DBConnection {
+  INSTANCE;
 
   // properties or instance variables here
   private int portNumber;
 
   private String hostName;
-  // TODO: Add tters and setters
+  // TODO: Add setters and setters
+  //
+  public void setPortNumber(int portNumber){
+    this.portNumber = portNumber;
+  }
 
-  private DBConnection() {}
-
-  public static DBConnection getInstance(){
-    if (uniqueInstance == null) { // if there's no instance, enter the synchronized block
-      synchronized (DBConnection.class) {
-        if (uniqueInstance == null) {
-          uniqueInstance = new DBConnection();
-        }
-      }
-    }
-    return uniqueInstance;
+  public int getPortNumber(){
+    return this.portNumber;
   }
 }
