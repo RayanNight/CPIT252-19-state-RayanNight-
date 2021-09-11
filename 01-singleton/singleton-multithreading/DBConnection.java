@@ -1,7 +1,9 @@
 package singletonMultiThreadingExample;
 
 public class DBConnection{
-  private static DBConnection uniqueInstance;
+  // Create an instance here early on and the JVM will guarantee that the 
+  // instance will be created before any thread accessed it. 
+  private static DBConnection uniqueInstance = new DBConnection();;
 
   // properties or instance variables here
   private int portNumber;
@@ -9,13 +11,8 @@ public class DBConnection{
   // TODO: Add getters and setters
 
   private DBConnection(){}
-  // Adding synchronized will cause substantial overhead and can decrease performance
-  // by a factor of 100.
 
-  public static synchronized DBConnection getInstance(){
-    if (uniqueInstance == null){
-      uniqueInstance = new DBConnection();
-    }
+  public static  DBConnection getInstance(){
     return uniqueInstance;
   }
 }
