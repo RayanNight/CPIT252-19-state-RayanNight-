@@ -9,8 +9,8 @@ public class BuyStock implements Order {
     }
 
     @Override
-	public void execute() { 
-		abcStock.buy(); 
+	public void execute() {
+	 	abcStock.buy(); 
     } 
 } 
 
