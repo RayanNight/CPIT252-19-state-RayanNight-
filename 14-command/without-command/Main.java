@@ -18,9 +18,9 @@ public class Main {
 
     // Bad: Without command
     BadOrder badOrder = new BadOrder(abcStock);
-    badOrder.execute("sell");
-    badOrder.execute("buy");
-    badOrder.execute("transfer");
+    badOrder.execute(Utils.BUY);
+    badOrder.execute(Utils.SELL);
+    badOrder.execute(Utils.TRANSFER);
 
 
   } 

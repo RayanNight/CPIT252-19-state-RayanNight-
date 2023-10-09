@@ -7,7 +7,7 @@ public class TVFactory {
 		} else if (type.equals("Sony")) {
 			return new SonyTV();
 		} else {
-			throw new Exception("Invalid TV Type");
+			throw new IllegalArgumentException("Invalid TV Type");
 		}
 	}
 }

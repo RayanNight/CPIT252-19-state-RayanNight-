@@ -2,17 +2,17 @@ package flyweightExample;
 
 public class glyph {
 
-    private char _c;
+    private char c;
 
     public glyph(char c) {
-        _c = c;
+        this.c = c;
     }
 
     public String myPosition(int position) {
-        return "" + position + " " + _c + ": " + this;
+        return "" + position + " " + this.c + ": " + this;
     }
 
-    // public String toString() {
-        // return "glyph<" + _c + ">";
-    // }
+    public String toString() {
+        return "glyph<" + this.c + ">";
+    }
 }
