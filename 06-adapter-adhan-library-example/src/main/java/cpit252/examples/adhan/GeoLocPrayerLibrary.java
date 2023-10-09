@@ -10,7 +10,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.TimeZone;
 
-public class GeoLocPrayer implements PrayerByCoordinates {
+public class GeoLocPrayerLibrary implements PrayerByCoordinates {
     @Override
     public String getPrayerTimes(double lat, double lon) {
         Coordinates coordinates = new Coordinates(lat, lon);
