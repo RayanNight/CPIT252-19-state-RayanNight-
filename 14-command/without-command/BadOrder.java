@@ -8,10 +8,10 @@ public class BadOrder{
     this.stock = stock;
   }
   public void execute(String type){
-    if (type == "purchase"){
+    if (type == Utils.BUY){
       stock.buy();
     }
-    else if(type == "sell"){
+    else if(type == UTILS.SELL){
       stock.sell();
     }
     else if(type == "transfer"){

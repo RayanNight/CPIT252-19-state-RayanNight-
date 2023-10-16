@@ -3,7 +3,7 @@ package logger;
 public class ErrorLogger extends AbstractLogger {
 
 	public ErrorLogger(int level){
-		this.level = level; 
+		super.level = level; 
     }
 
 

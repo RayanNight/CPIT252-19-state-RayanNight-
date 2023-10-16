@@ -9,7 +9,7 @@ public class App{
     //System.out.println(tmp);
     // Using the City Geo Weather Adapter
     GeoWeather gw = new GeoWeatherAdapter(w);
-    tmp = gw.getTemp(Double.parseDouble(args[1]), Double.parseDouble(args[2]));
+    double tmp = gw.getTemp(Double.parseDouble(args[0]), Double.parseDouble(args[1]));
     System.out.println(tmp);
   }
 }
