@@ -3,14 +3,12 @@ import observers.*;
 
 public class Main {
     public static void main(String[] args){
-            Observer twObserver = new TwitterObserver();
             Observer fbObserver = new FacebookObserver();
             Observer emailObserver = new EmailObserver();
             Observer waObserver = new WhatsappObserver();
 
             Subject s = new MessageSubject();
 
-            s.subscribe(twObserver);
             s.subscribe(fbObserver);
             s.subscribe(emailObserver);
 
