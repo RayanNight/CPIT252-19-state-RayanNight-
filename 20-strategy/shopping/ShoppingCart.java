@@ -28,8 +28,9 @@ public class ShoppingCart {
 		}
 		return sum;
 	}
+
 	
-	public void pay(Payment paymentMethod){
+	public void checkout(Payment paymentMethod){
 		double amount = calculateTotal();
 		paymentMethod.pay(amount);
 	}

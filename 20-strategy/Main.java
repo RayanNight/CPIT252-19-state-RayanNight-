@@ -20,10 +20,10 @@ public class Main {
 		Scanner scanner = new Scanner(System.in);
         int paymentMethod = scanner.nextInt();
         if (paymentMethod == 1){
-            cart.pay(new CreditCardPayment("Ali Omar", "4111111111111111", "123", "12/23"));
+            cart.checkout(new CreditCardPayment("Ali Omar", "4111111111111111", "123", "12/23"));
         }
         else if(paymentMethod == 2){
-            cart.pay(new PayPalPayment("email@example.com", "my-merchant-ID"));
+            cart.checkout(new PayPalPayment("email@example.com", "my-merchant-ID"));
         }
     }
 }
