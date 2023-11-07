@@ -12,9 +12,9 @@ public class Main {
 
     Broker broker = new Broker(); 
 
-    broker.placeOrders(buyStockOrder);
+    broker.placeOrder(buyStockOrder);
 
-    broker.placeOrders(sellStockOrder);
+    broker.placeOrder(sellStockOrder);
   } 
 } 
 

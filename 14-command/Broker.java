@@ -2,7 +2,7 @@ package command;
 
 public class Broker {
 
-	public void placeOrders(Order order){
+	public void placeOrder(Order order){
       order.execute();
 	}
 }

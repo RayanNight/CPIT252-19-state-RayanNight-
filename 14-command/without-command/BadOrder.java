@@ -11,7 +11,7 @@ public class BadOrder{
     if (type == Utils.BUY){
       stock.buy();
     }
-    else if(type == UTILS.SELL){
+    else if(type == Utils.SELL){ 
       stock.sell();
     }
     else if(type == "transfer"){
