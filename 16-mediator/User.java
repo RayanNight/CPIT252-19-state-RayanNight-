@@ -1,5 +1,7 @@
 package mediator;
 
+import mediator.ChatRoom;
+
 public class User {
 	
 	private String name;

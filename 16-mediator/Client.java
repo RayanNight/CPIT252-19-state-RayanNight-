@@ -1,4 +1,6 @@
 package mediator;
+import mediator.ChatRoom;
+import mediator.User;
 
 public class Client {
 	public static void main(String[] args) {
