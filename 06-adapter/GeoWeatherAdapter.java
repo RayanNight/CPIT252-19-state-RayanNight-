@@ -1,20 +1,20 @@
 package weather;
 
-public class GeoWeatherAdapter implements GeoWeather{
+public class GeoWeatherAdapter implements GeoWeather {
 
-  private Weather w;
+  private CityWeather w;
 
-  public GeoWeatherAdapter(Weather w){
+  public GeoWeatherAdapter(CityWeather w) {
     this.w = w;
   }
 
   @Override
-  public double getTemp(double lat, double lng){
+  public double getTemp(double lat, double lng) {
     String city = getCity(lat, lng);
     return w.getTemp(city);
   }
 
-  private String getCity(double lat, double lng){
+  private String getCity(double lat, double lng) {
     // Hitting Google Maps API to get city from lat & lng
     return "Jeddah";
   }
