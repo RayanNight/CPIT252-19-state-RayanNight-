@@ -1,7 +1,7 @@
 public class Chicken extends Sandwich {
 
     public Chicken() {
-        description = "Chicken Sandwich";
+        super.description = "Chicken Sandwich";
     }
 
     public double cost() {

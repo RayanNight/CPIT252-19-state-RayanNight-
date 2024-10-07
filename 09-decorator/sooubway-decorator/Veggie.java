@@ -1,7 +1,7 @@
 public class Veggie extends Sandwich {
 
     public Veggie() {
-        description = "Veggie Sandwich";
+        super.description = "Veggie Sandwich";
     }
 
     public double cost() {
