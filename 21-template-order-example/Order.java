@@ -1,13 +1,14 @@
-public interface Order {
-    default final void placeOrder() {
+public abstract class Order {
+
+    public final void placeOrder() {
         verifyOrder();
         processOrder();
         confirmOrder();
     }
 
-    void verifyOrder();
+    abstract void verifyOrder();
 
-    void processOrder();
+    abstract void processOrder();
 
-    void confirmOrder();
+    abstract void confirmOrder();
 }

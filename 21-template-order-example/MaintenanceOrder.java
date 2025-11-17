@@ -1,4 +1,4 @@
-public class MaintenanceOrder implements Order {
+public class MaintenanceOrder extends Order {
 
     private String id;
 
