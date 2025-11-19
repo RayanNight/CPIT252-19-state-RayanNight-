@@ -1,6 +1,6 @@
-public abstract class Order {
+public interface Order {
 
-    public final void placeOrder() {
+    default void placeOrder() {
         verifyOrder();
         processOrder();
         confirmOrder();
